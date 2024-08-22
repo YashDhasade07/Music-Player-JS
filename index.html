@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="body">
+    <div class="heading">
+        <!-- <button>dark mode</button> -->
+        <div id="Toggle" class="flexBox">
+            <div class="search">
+                <input type="text" id="searchInput" placeholder="Search songs or playlists">
+        <ul id="searchResults"></ul>
+            </div>
+            <input type="checkbox" id="checked">
+            <label id="colorBtn" for="checked" class="button"></label>
+        </div>
+        <div class="name">
+            <h1>Music Player</h1>
+        </div>
+    </div>
+    <div class="container">
+        <div class="all-song dmode">
+            <div class="filter">Filter by Genre
+                <select name="Genre" id="genre" class="dmode">
+                    <option value="All Songs">All Songs</option>
+                    <option value="Rock">Rock</option>
+                    <option value="Hip-Hop">Hip-Hop</option>
+                    <option value="Pop">Pop</option>
+                </select>
+            </div>
+            <div class="title">
+                All Songs
+            </div>
+            <div class="song-list">
+                <ul class="list" id="firstList">
+                    <!-- <li>Sugar-Maroon</li>
+                    <li>Locked Away</li> -->
+                </ul>
+            </div>
+        </div>
+        <div class="card dmode">
+            <div class="thumbnail">
+                <div class="maincard dmode">
+                    <div class="picture">
+                        <img id="image" src="Assets/maxresdefault (2).jpg" alt="">
+                    </div>
+                    <h1 id="songName">Gulabi Aankhen</h1>
+                    <p id="artistName">SANAM</p>
+                </div>
+            </div>
+            <audio id="audioPlayer" class="audio-cont" controls>
+                <source id="songSrc" src="Assets/Gulabi_Aankhen.mp3" type="audio/mp3">
+            </audio>
+
+            <div class="nx-bw-buttons">
+                <button id="backword"><i class="fa-solid fa-backward-step butt"></i></button>
+                <button id="forward"><i class="fa-solid fa-forward-step butt"></i></button>
+            </div>
+            <div class="flex">
+                <button id="addToPlay" class="addToPlay">Add to Playlist</button>
+            </div>
+        </div>
+        <div class="playlist">
+            <form>
+                <input id="inputText" class="text" type="text" placeholder="Enter Playlist Name">
+                <button id="CreatePlaylist" class="playlist-but">Create Playlist</button>
+            </form>
+            <div class="inner-playlist dmode">
+                <div class="playlist-title">
+                    Current Playlist
+                    <ul id="playlist-songs" class="list">
+                        <!-- <li>Sugar-Maroon</li>
+                        <li>Locked Away</li> -->
+                    </ul>
+                </div>
+                <div class="playlist-title">
+                    All Playlist
+                    <ul id="playlist-names" class="list">
+                        <!-- <li>Sugar-Maroon</li>
+                        <li>Locked Away</li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://kit.fontawesome.com/5252d0fb15.js" crossorigin="anonymous"></script>
+<script src="index.js"></script>
+
+</html>
